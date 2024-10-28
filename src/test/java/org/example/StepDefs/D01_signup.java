@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 
 import java.security.PublicKey;
-
+//ths sign up feature
 public class D01_signup {
     P01_signup s=new P01_signup(); //this an opject from class P01_signup
     //click on the sign up button
