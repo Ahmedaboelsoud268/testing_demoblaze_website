@@ -26,17 +26,17 @@
         | Malak    | 9)))!!eee4    |
         | REWQasdf653(*^@!%}{    | 0923323235    |
 
-          Scenario: the user try to sign up with empty username and password once
-            Given user click on the sign up button
-            When user enter valid "<username>" once and empty noce
-            And enter valid "<password>" once and empty once
-            And click on the sign up button
-            Then pop message appear tell me please full username and password
-            Examples:
-              | username | password |
-              | mohammed        |          |
-              |          |asd123/33#          |
-              |          |          |
+    Scenario Outline: the user try to sign up with empty username and password once
+      Given user click on the sign up button
+      When user enter valid "<username>" once and empty noce
+      And enter valid "<password>" once and empty once
+      And click on the sign up button
+      Then pop message appear tell me please full username and password
+      Examples:
+        | username | password   |
+        | mohammed |            |
+        |          | asd123/33# |
+        |          |            |
 
             Scenario: check the cancel icon and the close button in the page sign up
               Given user click on the sign up button

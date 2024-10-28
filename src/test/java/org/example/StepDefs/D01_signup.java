@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 
 import java.security.PublicKey;
-
+//ths sign up feature
 public class D01_signup {
     P01_signup s=new P01_signup(); //this an opject from class P01_signup
     //click on the sign up button
@@ -47,7 +47,7 @@ s.username().sendKeys("maghraby505");
         String al=alert.getText();
         System.out.println(al);
         SoftAssert soft=new SoftAssert();
-        soft.assertFalse(al.contains("This user already exist."),"try to enter not registered username");
+        soft.assertTrue(al.contains("Sign up successful."),"try to enter not registered username");
         soft.assertAll();
          if(al.contains("Sign up successful"))
          {alert.accept();}
@@ -58,6 +58,9 @@ s.username().sendKeys("maghraby505");
         Thread.sleep(1000);
         Alert alert=Hooks.driver.switchTo().alert();
         String al=alert.getText();
+        SoftAssert soft=new SoftAssert();
+        soft.assertTrue(al.contains("This user already exist."),"try to enter not registered username");
+        soft.assertAll();
         if(al.contains("This user already exist."))
         {alert.accept();}
     }
