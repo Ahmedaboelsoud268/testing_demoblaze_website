@@ -1,20 +1,20 @@
 @asd
   Feature: sign up
-    Scenario: the user create an account
+    Scenario: tests sign up feature with valid username and password
       Given user click on the sign up button
       When user enter valid username
       And enter valid password
       And click on the sign up button
       Then pop message appear tell me the sign up is successfully
 
-      Scenario: the user try to sign up by using exists username
+      Scenario: tests sign up feature with exists username and it valid password
         Given user click on the sign up button
         When user enter valid username
         And enter valid password
         And click on the sign up button
         Then pop message appear tell me this username is already exists
 
-    Scenario Outline: the user try to sign up with invalid username or invalid password or both
+    Scenario Outline: tests sign up feature with invalid username or invalid password or both
       Given user click on the sign up button
       When user enter invalid "<username>"
       And enter invalid "<password>"
@@ -26,7 +26,7 @@
         | Malak    | 9)))!!eee4    |
         | REWQasdf653(*^@!%}{    | 0923323235    |
 
-    Scenario Outline: the user try to sign up with empty username and password once
+    Scenario Outline: tests sign up feature with empty username once and password once and both empty once
       Given user click on the sign up button
       When user enter valid "<username>" once and empty noce
       And enter valid "<password>" once and empty once
@@ -38,7 +38,7 @@
         |          | asd123/33# |
         |          |            |
 
-            Scenario: check the cancel icon and the close button in the page sign up
+            Scenario: tests the cancel icon and the close button in the page sign up
               Given user click on the sign up button
               When user click on the cancel icon
               And user click on the close button
