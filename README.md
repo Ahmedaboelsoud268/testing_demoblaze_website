@@ -68,4 +68,18 @@ This project includes the following key features:
    - **Total Scenarios**: 1
      - the tests here selecting the random categories and select product and add product and add it to cart and assert by the alert.
 
+4. **Add to Cart and place order Feature**
+   - **Total Scenarios**: 5
+     - **5 Valid Scenarios**: 
+       - tests to check the product is added when i select product and add it to cart
+       - tests for check delete order and check the order there not found
+       -tests for place order with valid data
+       -tests to check the close button is clickable in place order
+      -tests to check the close icon in place order
+
+     - **2 Invalid Scenarios**: 
+       -tests for place order with invalid data
+       - tests for place order with empty data
+       - tests for check place order after delete the produt
+
 This framework ensures comprehensive testing of essential user functionalities, providing a solid foundation for a robust application.
