@@ -68,7 +68,7 @@
       Then pop message is display that is please add product to cart to continue the purchase
 
 
-    Scenario: tests to check the close button is clickable
+    Scenario: tests to check the close button is clickable in place order
       Given selenium select product
       When selenium add the product to cart
       Then assert with alert the product added successfully
@@ -77,7 +77,7 @@
       Then check the fields of palce order is displayed
       And selenium click on the close button
 
-      Scenario: tests to check the close icon
+      Scenario: tests to check the close icon in place order
         Given selenium select product
         When selenium add the product to cart
         Then assert with alert the product added successfully
